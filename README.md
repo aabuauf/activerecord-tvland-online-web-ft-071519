@@ -5,6 +5,15 @@
 - Create and modify tables using Active Record migrations.
 - Build associations between models using Active Record macros.
 
+show = Show.new(name: "Walking Dead")
+
+rick.show = show
+
+ rick.build_show(name: "Walking Dead").build_network(:call_letters => "amc")
+
+rick.save
+
+
 ## Overview
 
 In this lab, we'll be working with a TV show domain model. We will have a show,
